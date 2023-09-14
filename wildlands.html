@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: #111;
+      color: #ddd;
+      padding: 10px 10px;
+    }
+
+    [rowspan="3"] {
+      vertical-align: middle !important;
+      background: #282e36;
+
+    }
+
+
+    /* image modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      margin: auto;
+      text-align: center;
+    }
+
+    .modal-image {
+      display: inline-block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h3>Week 1</h3>
+  <table class="table table-dark table-striped">
+
+    <tbody>
+      <tr>
+        <th>Day</th>
+        <th>Challenge Type</th>
+        <th>Description</th>
+        <th>Goal</th>
+        <th>Screenshot</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Solo #1</td>
+        <td>Use the crossbow to kill 3 Santa Blanca veterans in a row without being detected and without collateral
+          damage.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/8/88/Daily_Challenge_Week_1_Day_1.png/revision/latest?cb=20220626014842"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 1 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/8/88/Daily_Challenge_Week_1_Day_1.png/revision/latest/scale-to-width-down/180?cb=20220626014842"
+              width="180" height="101" data-src="" class="" style="
+    cursor: pointer;
+">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only shotguns, deploy to La Cruz Bravo then complete the mission ‘La Plaga’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only sniper rifles, deploy to Koani Charlie then complete the mission ‘The
+          Truck Depot’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2</td>
+        <td>Solo #1</td>
+        <td>In Ocoro, kill 4 Unidad soldiers from 200m or further.</td>
+        <td>4</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/6/6f/Daily_Challenge_Week_1_Day_2.png/revision/latest?cb=20220626015332"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 2 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/6/6f/Daily_Challenge_Week_1_Day_2.png/revision/latest/scale-to-width-down/180?cb=20220626015332"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Barvechos Alpha then complete the
+          mission
+          ‘Nidia Flores’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only the crossbow, deploy to Koani Charlie then complete the mission ‘The
+          Convoy’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>Solo #1</td>
+        <td>In Media Luna, without dying, instigate a level 4 alert level then shoot down Unidad response helicopters
+          while the alert is active.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/5/51/Daily_Challenge_Week_1_Day_3.png/revision/latest?cb=20220626015630"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 3 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/5/51/Daily_Challenge_Week_1_Day_3.png/revision/latest/scale-to-width-down/180?cb=20220626015630"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without dying, deploy to Villa Verde Bravo then complete the missions ‘Laboratory
+          1’
+          and ‘Laboratory 2’.</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty, without being visually detected and using only CQC, deploy to Espiritu Santo Alpha
+          then
+          complete the mission ‘La Santera’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Solo #1</td>
+        <td>In Koani, use a ground vehicle gatling gun to kill Unidad soldiers.</td>
+        <td>8</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/1/18/Daily_Challenge_Week_1_Day_4.png/revision/latest?cb=20220626015836"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 4 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/1/18/Daily_Challenge_Week_1_Day_4.png/revision/latest/scale-to-width-down/180?cb=20220626015836"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only explosives, deploy to Ocoro Bravo then complete the mission ‘The
+          Hospital’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only SMG, deploy to San Mateo Alpha then complete the mission ‘La Carcel del
+          Pueblo’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>Solo #1</td>
+        <td>Using only 4 bullets or less, kill 4 Santa Blanca heavies in a row without collateral damage.</td>
+        <td>4</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/3/31/Daily_Challenge_Week_1_Day_5.png/revision/latest?cb=20220626020017"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 5"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/3/31/Daily_Challenge_Week_1_Day_5.png/revision/latest/scale-to-width-down/180?cb=20220626020017"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only explosives and CQC, deploy to Caimanes Bravo then complete the mission
+          ‘The Prototype’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and making kills from 200m or further, deploy to Tabacal Charlie then complete the
+          mission ‘Killasisa Coca Farm’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">6</td>
+        <td>Solo #1</td>
+        <td>In Malca, in Extreme difficulty, kill 4 Santa Blanca soldiers within a 1-second time frame.</td>
+        <td>4</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/9/99/Daily_Challenge_Week_1_Day_6.png/revision/latest?cb=20220626020114"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 6"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/9/99/Daily_Challenge_Week_1_Day_6.png/revision/latest/scale-to-width-down/180?cb=20220626020114"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only handguns, deploy to Tabacal Charlie then complete the mission ‘Freedom
+          of
+          Speech’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Libertad, in Extreme difficulty and without being visually detected, deploy to Libertad Bravo then
+          complete
+          the mission ‘Chemical Trail’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">7</td>
+        <td>Solo #1</td>
+        <td>In Flor de Oro, use CQC to kill 3 Unidad heavies in a row, without collateral damage</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/b/b5/Daily_Challenge_Week_1_Day_7.png/revision/latest?cb=20220626020242"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 1 Day 7"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/b/b5/Daily_Challenge_Week_1_Day_7.png/revision/latest/scale-to-width-down/180?cb=20220626020242"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>Without taking any damage, deploy to Mojocoyo Alpha then complete the mission ‘Gabriella’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only CQC, deploy to Itacua Bravo then complete the mission “Culta’s
+          Prisoner’.
+        </td>
+        <td>2</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Week 2</h3>
+  <table class="table table-dark table-striped">
+
+    <tbody>
+      <tr>
+        <th>Day</th>
+        <th>Challenge Type</th>
+        <th>Description</th>
+        <th>Goal</th>
+        <th>Screenshot</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Solo #1</td>
+        <td>Incite faction warfare between Santa Blanca and rebels.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/1/12/Daily_Challenge_Week_2_Day_1.png/revision/latest?cb=20220626034702"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 1 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/1/12/Daily_Challenge_Week_2_Day_1.png/revision/latest/scale-to-width-down/180?cb=20220626034702"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without dying, deploy to Montuyoc Bravo then complete the mission ‘Full Load’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only LMG, deploy to Tabacal Bravo then complete the mission ‘Stock drop’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2</td>
+        <td>Solo #1</td>
+        <td>Kill the Yeti and interact with its body.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/7/73/Daily_Challenge_Week_2_Day_2.png/revision/latest?cb=20220626034814"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 2 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/7/73/Daily_Challenge_Week_2_Day_2.png/revision/latest/scale-to-width-down/180?cb=20220626034814"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Pucara Charlie then complete the
+          mission
+          ‘El Sueño’s Convoy’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only assault rifles, deploy to San Mateo Alpha then complete the mission ‘La
+          Carcel Del Pueblo’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>Solo #1</td>
+        <td>Without HUD, kill 5 Santa Blanca soldiers in a row from 150m or further, without collateral damage.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/f/f9/Daily_Challenge_Week_2_Day_3.png/revision/latest?cb=20220626034956"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 3 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/f/f9/Daily_Challenge_Week_2_Day_3.png/revision/latest/scale-to-width-down/180?cb=20220626034956"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty, without dying and using only shotguns, deploy to Barvechos Bravo then complete the
+          mission ‘The Bank Heist’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without dying, deploy to Tabacal Charlie then complete the mission ‘Inside Job’ by
+          getting kills from 100m or further.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Solo #1</td>
+        <td>Use C4 to destroy 5 Santa Blanca ground vehicles in a row without being visually detected.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/5/59/Daily_Challenge_Week_2_Day_4.png/revision/latest?cb=20220626035125"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 4 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/5/59/Daily_Challenge_Week_2_Day_4.png/revision/latest/scale-to-width-down/180?cb=20220626035125"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only light machine guns, deploy to Libertad Alpha then complete the mission
+          ‘Toxic Assets’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and wihtout taking any damage, deploy to Espiritu Santo Delta then complete the
+          mission
+          ‘El Yayo’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>Solo #1</td>
+        <td>Incite faction warfare between Santa Blanca and rebels.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/8/8b/Daily_Challenge_Week_2_Day_5.png/revision/latest?cb=20220626035211"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 5 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/8/8b/Daily_Challenge_Week_2_Day_5.png/revision/latest/scale-to-width-down/180?cb=20220626035211"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty, without dying and using only handguns, deploy to Montuyoc Bravo then complete the
+          mission ‘El Sueno’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and making kills from 200m or further, deploy to Tabacal Charlie then complete the
+          mission ‘Killasisa Coca Farm’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">6</td>
+        <td>Solo #1</td>
+        <td>In Libertad, in Extreme difficulty, open 3 rebel prisons in a row without being visually detected.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/5/50/Daily_Challenge_Week_2_Day_6.png/revision/latest?cb=20220626035644"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 6 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/5/50/Daily_Challenge_Week_2_Day_6.png/revision/latest/scale-to-width-down/180?cb=20220626035644"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only handguns, deploy to Malca Bravo then complete the mission ‘Show
+          Canceled’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without taking any damage, deploy to Tabacal Charlie then complete the mission
+          ‘Madre Coca’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">7</td>
+        <td>Solo #1</td>
+        <td>In Extreme difficulty, perform 7 headshots in a row without being visually detected.</td>
+        <td>7</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/3/3c/Daily_Challenge_Week_2_Day_7.png/revision/latest?cb=20220626035749"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 2 Day 7"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/3/3c/Daily_Challenge_Week_2_Day_7.png/revision/latest/scale-to-width-down/180?cb=20220626035749"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only explosives, deploy to Espiritu Santo Bravo then complete the mission
+          ‘The
+          Advisor’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Advanced difficulty and without dying, deploy to Caimanes Echo then complete the two parts of the mission
+          ‘Operation: Archangel’.</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Week 3</h3>
+  <table class="table table-dark table-striped">
+
+    <tbody>
+      <tr>
+        <th>Day</th>
+        <th>Challenge Type</th>
+        <th>Description</th>
+        <th>Goal</th>
+        <th>Screenshot</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Solo #1</td>
+        <td>In Monte Puncu, find an APC and use it to destroy Santa Blanca vehicles in a row without dying.</td>
+        <td>7</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/5/52/Daily_Challenge_Week_3_Day_1.png/revision/latest?cb=20220626043807"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 1 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/5/52/Daily_Challenge_Week_3_Day_1.png/revision/latest/scale-to-width-down/180?cb=20220626043807"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Barvechos Bravo then complete the
+          mission
+          ‘Nidia’s Cash’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty, without being visually detected and using only explosives, deploy to Mojocoyo Alpha
+          then complete the mission ‘The Main Stash’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2</td>
+        <td>Solo #1</td>
+        <td>Use the rebel mortar to kill 4 enemies in a single explosion.</td>
+        <td>4</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/f/fc/Daily_Challenge_Week_3_Day_2.png/revision/latest?cb=20220626043906"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 2 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/f/fc/Daily_Challenge_Week_3_Day_2.png/revision/latest/scale-to-width-down/180?cb=20220626043906"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without taking any damage, deploy to Agua Verde Alpha then complete the mission
+          ‘Carzita’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Mojocoyo Alpha then complete the
+          mission
+          ‘Mojocoyo’s Boss’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>Solo #1</td>
+        <td>Kill 3 Santa Blanca heavies from 100m or further while stationary.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/f/f3/Daily_Challenge_Week_3_Day_3.png/revision/latest?cb=20220626044556"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 3 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/f/f3/Daily_Challenge_Week_3_Day_3.png/revision/latest/scale-to-width-down/180?cb=20220626044556"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without using any assault rifles or explosives, deploy to La Cruz Bravo then
+          complete the mission ‘Operation: Watchman’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Espiritu Santo Alpha then complete the
+          mission ‘La Santera’s Chapel’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Solo #1</td>
+        <td>Use C4 to destroy 5 Santa Blanca ground vehicles in a row without being visually detected.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/f/f1/Daily_Challenge_Week_3_Day_4.png/revision/latest?cb=20220626044718"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 4 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/f/f1/Daily_Challenge_Week_3_Day_4.png/revision/latest/scale-to-width-down/180?cb=20220626044718"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>Deploy to Remanzo Bravo then complete the mission ‘The Real El Gato’ while killing enemies only from 150m or
+          further.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and doing only headshots, deploy to Villa Verde Alpha then complete the mission
+          ‘Miners
+          Strike’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>Solo #1</td>
+        <td>Kill 3 Santa Blanca veterans in a row without being visually detected and without collateral damage.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/5/5a/Daily_Challenge_Week_3_Day_5.png/revision/latest?cb=20220626044958"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 5 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/5/5a/Daily_Challenge_Week_3_Day_5.png/revision/latest/scale-to-width-down/180?cb=20220626044958"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only SMG, deploy to Media Luna Bravo then complete the mission ‘El Muro’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only vehicle weapons, deploy to Espiritu Santo Alpha then complete the
+          mission
+          ‘Soldiers of Santa Muerte’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">6</td>
+        <td>Solo #1</td>
+        <td>In Media Luna, use C4 to blow up 3 Unidad SAMs in a row without being visually detected.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/3/37/Daily_Challenge_Week_3_Day_6.png/revision/latest?cb=20220626045353"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 6 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/3/37/Daily_Challenge_Week_3_Day_6.png/revision/latest/scale-to-width-down/180?cb=20220626045353"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Malca Bravo then complete the mission
+          ‘El
+          Cardenal’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Remanzo, using only CQC, deploy to Remanzo Bravo then complete the missions ‘El Gato’ and “The Real El
+          Gato’.</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td rowspan="3">7</td>
+        <td>Solo #1</td>
+        <td>Destroy helicopters using helicopter weapons.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/c/c2/Daily_Challenge_Week_3_Day_7.png/revision/latest?cb=20220626045602"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 3 Day 7 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/c/c2/Daily_Challenge_Week_3_Day_7.png/revision/latest/scale-to-width-down/180?cb=20220626045602"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Flor de Oro, in Extreme difficulty and without being visually detected, deploy to Flor de Oro Charlie
+          then
+          complete the mission ‘The Trail of the General’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty, without dying and using only handguns, deploy to Barvechos Bravo then complete the
+          mission ‘Pulpo’s Right-Hand Man’.</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Week 4</h3>
+  <table class="table table-dark table-striped">
+
+    <tbody>
+      <tr>
+        <th>Day</th>
+        <th>Challenge Type</th>
+        <th>Description</th>
+        <th>Goal</th>
+        <th>Screenshot</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Solo #1</td>
+        <td>Without dying, instigate a level 4 alert then kill 6 incoming Unidad soldiers using only shotguns</td>
+        <td>6</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/7/7b/Daily_Challenge_Week_4_Day_1.png/revision/latest?cb=20220626052140"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 1 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/7/7b/Daily_Challenge_Week_4_Day_1.png/revision/latest/scale-to-width-down/180?cb=20220626052140"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only explosives and CQC, deploy to Espiritu Santo Delta then complete the
+          mission ‘Gold Rush South’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Libertad alpha then complete the
+          mission
+          ‘The Refinery Chief’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2</td>
+        <td>Solo #1</td>
+        <td>Appease the spirits of the Three Witches.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/6/68/Daily_Challenge_Week_4_Day_2.png/revision/latest?cb=20220626052522"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 2 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/6/68/Daily_Challenge_Week_4_Day_2.png/revision/latest/scale-to-width-down/180?cb=20220626052522"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only sniper rifles, deploy to Barvechos alpha then complete the mission
+          ‘Nidia
+          Flores’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Espiritu Santo Delta then complete the
+          mission ‘Gold Rush North’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>Solo #1</td>
+        <td>While stationary, kill 3 Santa Blanca snipers from 100m or further.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/5/5f/Daily_Challenge_Week_4_Day_3.png/revision/latest?cb=20220626052638"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 3 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/5/5f/Daily_Challenge_Week_4_Day_3.png/revision/latest/scale-to-width-down/180?cb=20220626052638"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without dying, deploy to Barvechos Bravo then complete the mission ‘El Pulpo’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only SMG, deploy to Ocoro Charlie then complete the mission ‘Aggressive
+          Competition’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Solo #1</td>
+        <td>In Extreme difficulty, destroy 5 enemy vehicles in a row without being visually detected.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/9/99/Daily_Challenge_Week_4_Day_4.png/revision/latest?cb=20220626052744"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 4 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/9/99/Daily_Challenge_Week_4_Day_4.png/revision/latest/scale-to-width-down/180?cb=20220626052744"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty, without dying and using only explosives, deploy to Remanzo Bravo then complete the
+          missions ‘The Quinoa Factory’ &amp; ‘Energy Drinks’.</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty, without being visually detected and using only CQC, deploy to Montuyoc Bravo then
+          complete the mission ‘The Instructors’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>Solo #1</td>
+        <td>Kill an enemy by hitting them with a boat.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/2/2f/Daily_Challenge_Week_4_Day_5.png/revision/latest?cb=20220626053046"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 5 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only sniper rifles, deploy to Malca Bravo then complete the mission ‘El
+          Chido’s Car’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without dying, deploy to Ocoro Charlie then complete the missions ‘The Boat Lab’
+          &amp; ‘Cooking with Coca’.</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td rowspan="3">6</td>
+        <td>Solo #1</td>
+        <td>Put an end to the false cult of El Tio.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/9/9c/Daily_Challenge_Week_4_Day_6.png/revision/latest?cb=20220626053205"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 6 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only sniper rifles, deploy to Flor de Oro Charlie then complete the mission
+          ‘The Trail of the General’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only explosives and CQC, deploy to Flor de Oro Charlie then complete the
+          mission ‘The Black Site’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">7</td>
+        <td>Solo #1</td>
+        <td>Without dying, instigate a level 4 alert then shoot down Unidad response helicopters while the alert is
+          active.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/3/37/Daily_Challenge_Week_4_Day_7.png/revision/latest?cb=20220626053449"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 4 Day 7 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without taking any damage, deploy to Villa Verde Bravo then complete the mission
+          ‘La
+          Gringa’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only the crossbow, deploy to Montuyoc Bravo then complete the mission ‘El
+          Sueno’.</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Week 5</h3>
+  <table class="table table-dark table-striped">
+
+    <tbody>
+      <tr>
+        <th>Day</th>
+        <th>Challenge Type</th>
+        <th>Description</th>
+        <th>Goal</th>
+        <th>Screenshot</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Solo #1</td>
+        <td>Open 3 rebel prisons in a row without being visually detected.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/b/b9/Daily_Challenge_Week_5_Day_1.png/revision/latest?cb=20220626055849"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 1 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/b/b9/Daily_Challenge_Week_5_Day_1.png/revision/latest/scale-to-width-down/180?cb=20220626055849"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without taking any damage, deploy to San Mateo Bravo then complete the mission
+          ‘The
+          Prison Village’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Advanced difficulty and without dying, deploy to Caimanes Charlie then complete the missions ‘Submarine
+          Fleet 1’, ‘Submarine Fleet 2’ &amp; ‘Submarine Fleet 3’.</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2</td>
+        <td>Solo #1</td>
+        <td>Use a sniper rifle to kill Unidad soldiers from 300m or further.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/7/70/Daily_Challenge_Week_5_Day_2.png/revision/latest?cb=20220626060307"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 2 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/7/70/Daily_Challenge_Week_5_Day_2.png/revision/latest/scale-to-width-down/180?cb=20220626060307"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only assault rifles, deploy to Caimanes Delta then complete the mission
+          ‘Boat
+          Ride’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and making kills only from 100m or further, deploy to Itacua Echo then complete the
+          mission ‘Sandoval’s Remains’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>Solo #1</td>
+        <td>Kill 2 enemy soldiers with a single sniper bullet.</td>
+        <td>2</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/4/46/Daily_Challenge_Week_5_Day_3.png/revision/latest?cb=20220626060438"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 3 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/4/46/Daily_Challenge_Week_5_Day_3.png/revision/latest/scale-to-width-down/180?cb=20220626060438"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty, without being visually detected and using only sniper rifles, deploy to Villa Verde
+          Bravo then complete the mission ‘Framing el Wey’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty, using a single grenade and no other weapons, deploy to Remanzo Bravo then complete
+          the
+          mission ‘The Mule Doctors’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Solo #1</td>
+        <td>In Libertad, use CQC to kill 5 Santa Blanca soldiers in a row without being visually detected and without
+          collateral damage.</td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/8/8f/Daily_Challenge_Week_5_Day_4.png/revision/latest?cb=20220626060545"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 4 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only LMG, deploy to Malca Bravo then complete the mission ‘El Cardenal’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without taking any damage, deploy to Flor De Oro alpha then complete the mission
+          ‘General Baro’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>Solo #1</td>
+        <td>In Extreme difficulty and without being visually detected, use C4 to destroy 3 jammers in a row.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/0/0b/Daily_Challenge_Week_5_Day_5.png/revision/latest?cb=20220626061301"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 5 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Media Luna Bravo then complete the
+          mission ‘El Muro’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty, without taking any damage and without HUD, deploy to Agua Verde Charlie then complete
+          the mission ‘The Resort’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">6</td>
+        <td>Solo #1</td>
+        <td>While stationary, kill 3 Unidad snipers from 100m or further.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/0/09/Daily_Challenge_Week_5_Day_6.png/revision/latest?cb=20220626061415"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 6 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without dying, deploy to Montuyoc Alpha then complete the mission ‘Operation
+          Oracle’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only CQC, deploy to Itacua Bravo then complete the mission “Culta’s
+          Prisoner’.
+        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">7</td>
+        <td>Solo #1</td>
+        <td>Without being visually detected and without collateral damage, use CQC to kill 5 Unidad soldiers in a row.
+        </td>
+        <td>5</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/3/3a/Daily_Challenge_Week_5_Day_7.png/revision/latest?cb=20220626061636"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 5 Day 7 screenshot"
+              src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" width="180"
+              height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to La Cruz Bravo then complete the mission
+          ‘La Plaga’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Caimanes Bravo then complete the
+          mission
+          ‘The Prototype’.</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Week 6</h3>
+  <table class="table table-dark table-striped">
+
+    <tbody>
+      <tr class="fixed-header">
+        <th>Day</th>
+        <th>Challenge Type</th>
+        <th>Description</th>
+        <th>Goal</th>
+        <th>Screenshot</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>Solo #1</td>
+        <td>Without being visually detected and without collateral damage, use a handgun to kill 7 Santa Blanca heavies
+          and Veterans in a row.</td>
+        <td>7</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/f/f8/Daily_Challenge_Week_6_Day_1.png/revision/latest?cb=20220626062513"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 1 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/f/f8/Daily_Challenge_Week_6_Day_1.png/revision/latest/scale-to-width-down/180?cb=20220626062513"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only handguns, deploy to Barvechos Alpha then complete the mission ‘Nidia
+          Flores’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only explosives and CQC, deploy to Agua Verde Alpha then complete the
+          mission
+          ‘The Casino’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">2</td>
+        <td>Solo #1</td>
+        <td>Use the crossbow to kill the Yeti.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/e/eb/Daily_Challenge_Week_6_Day_2.png/revision/latest?cb=20220726191114"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 2 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/e/eb/Daily_Challenge_Week_6_Day_2.png/revision/latest/scale-to-width-down/180?cb=20220726191114"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only explosives, deploy to Agua Verde Charlie then complete the mission
+          'Cooking With Coca'.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only a sniper rifle, deploy to La Cruz Bravo then complete the mission
+          'Operation: Watchman'.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>Solo #1</td>
+        <td>Use a LMG to destroy Santa Blanca sports cars.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/0/0b/Daily_Challenge_Week_6_Day_3.png/revision/latest?cb=20220626062607"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 3 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/0/0b/Daily_Challenge_Week_6_Day_3.png/revision/latest/scale-to-width-down/180?cb=20220626062607"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only shotguns, deploy to San Mateo Bravo then complete the mission ‘The
+          Prison
+          Village’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without taking any damage, deploy to Ocoro Charlie then complete the mission
+          ‘Special Transport.’</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Solo #1</td>
+        <td>Use a sniper rifle to kill Unidad heavies from 150m or further.</td>
+        <td>3</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/1/19/Daily_Challenge_Week_6_Day_4.png/revision/latest?cb=20220626063255"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 4 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/1/19/Daily_Challenge_Week_6_Day_4.png/revision/latest/scale-to-width-down/180?cb=20220626063255"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Koani Alpha then complete the misison
+          ‘Train Graveyard’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without taking damage, deploy to Montuyoc Bravo then complete the mission ‘The
+          Deserter’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>Solo #1</td>
+        <td>Use explosives to kill the leader of the fake cult of ‘El Tio’.</td>
+        <td>1</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/d/d6/Daily_Challenge_Week_6_Day_5.png/revision/latest?cb=20220626063501"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 5 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/d/d6/Daily_Challenge_Week_6_Day_5.png/revision/latest/scale-to-width-down/180?cb=20220626063501"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and without being visually detected, deploy to Remanzo Bravo then complete the mission
+          ‘Energy Drinks’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only assault rifles, deploy to Koani Bravo then complete the mission ‘Flight
+          Plan’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">6</td>
+        <td>Solo #1</td>
+        <td>Using only 4 bullets or less, kill 4 Unidad snipers in a row without collateral damage.</td>
+        <td>4</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/f/f9/Daily_Challenge_Week_6_Day_6.png/revision/latest?cb=20220626064219"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 6 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/f/f9/Daily_Challenge_Week_6_Day_6.png/revision/latest/scale-to-width-down/180?cb=20220626064219"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only the crossbow, deploy to Malca Bravo then complete the mission ‘Show
+          Canceled’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and using only sniper rifles, deploy to Inca Camina Bravo then complete the mission
+          ‘Operation Silent Spade: Snafu’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="3">7</td>
+        <td>Solo #1</td>
+        <td>In Extreme difficulty, kill 6 Unidad soldiers while stationary.</td>
+        <td>6</td>
+        <td rowspan="3">
+          <a href="https://static.wikia.nocookie.net/ghostrecon/images/2/2c/Daily_Challenge_Week_6_Day_7.png/revision/latest?cb=20220626064614"
+            class="image" target="_blank" style="cursor: pointer;">
+            <img alt="Daily Challenge Week 6 Day 7 screenshot"
+              src="https://static.wikia.nocookie.net/ghostrecon/images/2/2c/Daily_Challenge_Week_6_Day_7.png/revision/latest/scale-to-width-down/180?cb=20220626064614"
+              width="180" height="101" data-src="" class="">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Solo #2</td>
+        <td>In Extreme difficulty and using only assault rifles, deploy to Mojocoyo Alpha then complete the mission ‘The
+          Outpost’.</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Solo #3</td>
+        <td>In Extreme difficulty and without taking any damage deploy to Pucara Charlie then complete the mission ‘El
+          Sueño’s Convoy’.</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <img src="" id="modal-image" data-src="" class="">
+    </div>
+  </div>
+
+
+  <script>
+    // // Get the gallery box
+    // var imageBox1 = document.getElementById("imageBox1");
+
+    // // Get the modal image tag
+    // var modal = document.getElementById("myModal");
+
+    // var modalImage = document.getElementById("modal-image");
+
+    // // When the user clicks the big picture, set the image and open the modal
+    // imageBox1.onclick = function (e) {
+    //   var src = e.srcElement.src;
+    //   modal.style.display = "block";
+    //   modalImage.src = src;
+    // };
+  </script>
+</body>
+
+</html>
