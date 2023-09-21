@@ -5,11 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=`, initial-scale=1.0">
   <title>Document</title>
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
   <style>
     body {
       background: #111;
@@ -21,51 +28,1118 @@
       vertical-align: middle !important;
     }
 
-
-    /* image modal */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 50px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgb(0, 0, 0);
-      background-color: rgba(0, 0, 0, 0.4);
+    .bg-dark-1 {
+      background: linear-gradient(45deg, #54002d, #1f0044);
     }
 
-    .modal-content {
-      margin: auto;
-      text-align: center;
-    }
-
-    .modal-image {
-      display: inline-block;
-    }
-.op-0 {
-}
-
-.bg-dark-1 {
-    background: linear-gradient(45deg, #54002d, #1f0044);
-}
     tbody tr:first-child {
       background: #00223f;
     }
+
+    * {
+      outline: none !important;
+    }
+
+    .btn {
+      box-shadow: none !important;
+    }
+
+    .card-header {
+      cursor: pointer;
+    }
+
+    .card-body {
+      background: #2b3036;
+      padding: 0;
+    }
+
+    /* tbody tr:first-child th,
+    tbody tr:first-child {
+      display: none;
+      margin: 0;
+      padding: 0;
+      height: 0;
+      font-size: 0;
+    } */
   </style>
 
 </head>
 
 <body>
+  <div class="accordion" id="accordionExample">
+    <div class="card bg-dark">
+      <div class="card-header" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
+        aria-controls="collapse1">
+        Week 1
+      </div>
+      <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+
+            <tbody>
+              <tr>
+                <th>Day</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Goal</th>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">1</td>
+                <td>Solo #1</td>
+                <td>Use the crossbow to kill 3 Santa Blanca veterans in a row without being detected and without
+                  collateral
+                  damage.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only shotguns, deploy to La Cruz Bravo then complete the mission ‘La
+                  Plaga’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only sniper rifles, deploy to Koani Charlie then complete the
+                  mission ‘The
+                  Truck Depot’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">2</td>
+                <td>Solo #1</td>
+                <td>In Ocoro, kill 4 Unidad soldiers from 200m or further.</td>
+                <td>4</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Barvechos Alpha then complete
+                  the
+                  mission
+                  ‘Nidia Flores’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only the crossbow, deploy to Koani Charlie then complete the mission
+                  ‘The
+                  Convoy’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">3</td>
+                <td>Solo #1</td>
+                <td>In Media Luna, without dying, instigate a level 4 alert level then shoot down Unidad response
+                  helicopters
+                  while the alert is active.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without dying, deploy to Villa Verde Bravo then complete the missions
+                  ‘Laboratory
+                  1’
+                  and ‘Laboratory 2’.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty, without being visually detected and using only CQC, deploy to Espiritu Santo
+                  Alpha
+                  then
+                  complete the mission ‘La Santera’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">4</td>
+                <td>Solo #1</td>
+                <td>In Koani, use a ground vehicle gatling gun to kill Unidad soldiers.</td>
+                <td>8</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only explosives, deploy to Ocoro Bravo then complete the mission
+                  ‘The
+                  Hospital’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only SMG, deploy to San Mateo Alpha then complete the mission ‘La
+                  Carcel del
+                  Pueblo’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">5</td>
+                <td>Solo #1</td>
+                <td>Using only 4 bullets or less, kill 4 Santa Blanca heavies in a row without collateral damage.</td>
+                <td>4</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only explosives and CQC, deploy to Caimanes Bravo then complete the
+                  mission
+                  ‘The Prototype’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and making kills from 200m or further, deploy to Tabacal Charlie then complete
+                  the
+                  mission ‘Killasisa Coca Farm’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">6</td>
+                <td>Solo #1</td>
+                <td>In Malca, in Extreme difficulty, kill 4 Santa Blanca soldiers within a 1-second time frame.</td>
+                <td>4</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only handguns, deploy to Tabacal Charlie then complete the mission
+                  ‘Freedom
+                  of
+                  Speech’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Libertad, in Extreme difficulty and without being visually detected, deploy to Libertad Bravo
+                  then
+                  complete
+                  the mission ‘Chemical Trail’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">7</td>
+                <td>Solo #1</td>
+                <td>In Flor de Oro, use CQC to kill 3 Unidad heavies in a row, without collateral damage</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>Without taking any damage, deploy to Mojocoyo Alpha then complete the mission ‘Gabriella’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only CQC, deploy to Itacua Bravo then complete the mission “Culta’s
+                  Prisoner’.
+                </td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <div class="card-header" id="heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+        aria-controls="collapse2">
+        Week 2
+      </div>
+      <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+
+            <tbody>
+              <tr>
+                <th>Day</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Goal</th>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">1</td>
+                <td>Solo #1</td>
+                <td>Incite faction warfare between Santa Blanca and rebels.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without dying, deploy to Montuyoc Bravo then complete the mission ‘Full
+                  Load’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only LMG, deploy to Tabacal Bravo then complete the mission ‘Stock
+                  drop’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">2</td>
+                <td>Solo #1</td>
+                <td>Kill the Yeti and interact with its body.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Pucara Charlie then complete
+                  the
+                  mission
+                  ‘El Sueño’s Convoy’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only assault rifles, deploy to San Mateo Alpha then complete the
+                  mission ‘La
+                  Carcel Del Pueblo’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">3</td>
+                <td>Solo #1</td>
+                <td>Without HUD, kill 5 Santa Blanca soldiers in a row from 150m or further, without collateral damage.
+                </td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty, without dying and using only shotguns, deploy to Barvechos Bravo then
+                  complete the
+                  mission ‘The Bank Heist’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without dying, deploy to Tabacal Charlie then complete the mission ‘Inside
+                  Job’ by
+                  getting kills from 100m or further.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">4</td>
+                <td>Solo #1</td>
+                <td>Use C4 to destroy 5 Santa Blanca ground vehicles in a row without being visually detected.</td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only light machine guns, deploy to Libertad Alpha then complete the
+                  mission
+                  ‘Toxic Assets’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and wihtout taking any damage, deploy to Espiritu Santo Delta then complete
+                  the
+                  mission
+                  ‘El Yayo’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">5</td>
+                <td>Solo #1</td>
+                <td>Incite faction warfare between Santa Blanca and rebels.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty, without dying and using only handguns, deploy to Montuyoc Bravo then complete
+                  the
+                  mission ‘El Sueno’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and making kills from 200m or further, deploy to Tabacal Charlie then complete
+                  the
+                  mission ‘Killasisa Coca Farm’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">6</td>
+                <td>Solo #1</td>
+                <td>In Libertad, in Extreme difficulty, open 3 rebel prisons in a row without being visually detected.
+                </td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only handguns, deploy to Malca Bravo then complete the mission ‘Show
+                  Canceled’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without taking any damage, deploy to Tabacal Charlie then complete the
+                  mission
+                  ‘Madre Coca’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">7</td>
+                <td>Solo #1</td>
+                <td>In Extreme difficulty, perform 7 headshots in a row without being visually detected.</td>
+                <td>7</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only explosives, deploy to Espiritu Santo Bravo then complete the
+                  mission
+                  ‘The
+                  Advisor’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Advanced difficulty and without dying, deploy to Caimanes Echo then complete the two parts of the
+                  mission
+                  ‘Operation: Archangel’.</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <div class="card-header" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+        aria-controls="collapse3">
+        Week 3
+      </div>
+      <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+
+            <tbody>
+              <tr>
+                <th>Day</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Goal</th>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">1</td>
+                <td>Solo #1</td>
+                <td>In Monte Puncu, find an APC and use it to destroy Santa Blanca vehicles in a row without dying.</td>
+                <td>7</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Barvechos Bravo then complete
+                  the
+                  mission
+                  ‘Nidia’s Cash’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty, without being visually detected and using only explosives, deploy to Mojocoyo
+                  Alpha
+                  then complete the mission ‘The Main Stash’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">2</td>
+                <td>Solo #1</td>
+                <td>Use the rebel mortar to kill 4 enemies in a single explosion.</td>
+                <td>4</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without taking any damage, deploy to Agua Verde Alpha then complete the
+                  mission
+                  ‘Carzita’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Mojocoyo Alpha then complete
+                  the
+                  mission
+                  ‘Mojocoyo’s Boss’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">3</td>
+                <td>Solo #1</td>
+                <td>Kill 3 Santa Blanca heavies from 100m or further while stationary.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without using any assault rifles or explosives, deploy to La Cruz Bravo
+                  then
+                  complete the mission ‘Operation: Watchman’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Espiritu Santo Alpha then
+                  complete the
+                  mission ‘La Santera’s Chapel’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">4</td>
+                <td>Solo #1</td>
+                <td>Use C4 to destroy 5 Santa Blanca ground vehicles in a row without being visually detected.</td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>Deploy to Remanzo Bravo then complete the mission ‘The Real El Gato’ while killing enemies only from
+                  150m or
+                  further.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and doing only headshots, deploy to Villa Verde Alpha then complete the
+                  mission
+                  ‘Miners
+                  Strike’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">5</td>
+                <td>Solo #1</td>
+                <td>Kill 3 Santa Blanca veterans in a row without being visually detected and without collateral damage.
+                </td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only SMG, deploy to Media Luna Bravo then complete the mission ‘El
+                  Muro’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only vehicle weapons, deploy to Espiritu Santo Alpha then complete
+                  the
+                  mission
+                  ‘Soldiers of Santa Muerte’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">6</td>
+                <td>Solo #1</td>
+                <td>In Media Luna, use C4 to blow up 3 Unidad SAMs in a row without being visually detected.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Malca Bravo then complete the
+                  mission
+                  ‘El
+                  Cardenal’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Remanzo, using only CQC, deploy to Remanzo Bravo then complete the missions ‘El Gato’ and “The
+                  Real El
+                  Gato’.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">7</td>
+                <td>Solo #1</td>
+                <td>Destroy helicopters using helicopter weapons.</td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Flor de Oro, in Extreme difficulty and without being visually detected, deploy to Flor de Oro
+                  Charlie
+                  then
+                  complete the mission ‘The Trail of the General’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty, without dying and using only handguns, deploy to Barvechos Bravo then
+                  complete the
+                  mission ‘Pulpo’s Right-Hand Man’.</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <div class="card-header" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+        aria-controls="collapse4">
+        Week 4
+      </div>
+      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+
+            <tbody>
+              <tr>
+                <th>Day</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Goal</th>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">1</td>
+                <td>Solo #1</td>
+                <td>Without dying, instigate a level 4 alert then kill 6 incoming Unidad soldiers using only shotguns
+                </td>
+                <td>6</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only explosives and CQC, deploy to Espiritu Santo Delta then
+                  complete the
+                  mission ‘Gold Rush South’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Libertad alpha then complete
+                  the
+                  mission
+                  ‘The Refinery Chief’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">2</td>
+                <td>Solo #1</td>
+                <td>Appease the spirits of the Three Witches.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only sniper rifles, deploy to Barvechos alpha then complete the
+                  mission
+                  ‘Nidia
+                  Flores’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Espiritu Santo Delta then
+                  complete the
+                  mission ‘Gold Rush North’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">3</td>
+                <td>Solo #1</td>
+                <td>While stationary, kill 3 Santa Blanca snipers from 100m or further.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without dying, deploy to Barvechos Bravo then complete the mission ‘El
+                  Pulpo’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only SMG, deploy to Ocoro Charlie then complete the mission
+                  ‘Aggressive
+                  Competition’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">4</td>
+                <td>Solo #1</td>
+                <td>In Extreme difficulty, destroy 5 enemy vehicles in a row without being visually detected.</td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty, without dying and using only explosives, deploy to Remanzo Bravo then
+                  complete the
+                  missions ‘The Quinoa Factory’ &amp; ‘Energy Drinks’.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty, without being visually detected and using only CQC, deploy to Montuyoc Bravo
+                  then
+                  complete the mission ‘The Instructors’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">5</td>
+                <td>Solo #1</td>
+                <td>Kill an enemy by hitting them with a boat.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only sniper rifles, deploy to Malca Bravo then complete the mission
+                  ‘El
+                  Chido’s Car’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without dying, deploy to Ocoro Charlie then complete the missions ‘The
+                  Boat Lab’
+                  &amp; ‘Cooking with Coca’.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">6</td>
+                <td>Solo #1</td>
+                <td>Put an end to the false cult of El Tio.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only sniper rifles, deploy to Flor de Oro Charlie then complete the
+                  mission
+                  ‘The Trail of the General’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only explosives and CQC, deploy to Flor de Oro Charlie then complete
+                  the
+                  mission ‘The Black Site’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">7</td>
+                <td>Solo #1</td>
+                <td>Without dying, instigate a level 4 alert then shoot down Unidad response helicopters while the alert
+                  is
+                  active.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without taking any damage, deploy to Villa Verde Bravo then complete the
+                  mission
+                  ‘La
+                  Gringa’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only the crossbow, deploy to Montuyoc Bravo then complete the
+                  mission ‘El
+                  Sueno’.</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <div class="card-header" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+        aria-controls="collapse5">
+        Week 5
+      </div>
+      <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+
+            <tbody>
+              <tr>
+                <th>Day</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Goal</th>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">1</td>
+                <td>Solo #1</td>
+                <td>Open 3 rebel prisons in a row without being visually detected.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without taking any damage, deploy to San Mateo Bravo then complete the
+                  mission
+                  ‘The
+                  Prison Village’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Advanced difficulty and without dying, deploy to Caimanes Charlie then complete the missions
+                  ‘Submarine
+                  Fleet 1’, ‘Submarine Fleet 2’ &amp; ‘Submarine Fleet 3’.</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">2</td>
+                <td>Solo #1</td>
+                <td>Use a sniper rifle to kill Unidad soldiers from 300m or further.</td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only assault rifles, deploy to Caimanes Delta then complete the
+                  mission
+                  ‘Boat
+                  Ride’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and making kills only from 100m or further, deploy to Itacua Echo then
+                  complete the
+                  mission ‘Sandoval’s Remains’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">3</td>
+                <td>Solo #1</td>
+                <td>Kill 2 enemy soldiers with a single sniper bullet.</td>
+                <td>2</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty, without being visually detected and using only sniper rifles, deploy to Villa
+                  Verde
+                  Bravo then complete the mission ‘Framing el Wey’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty, using a single grenade and no other weapons, deploy to Remanzo Bravo then
+                  complete
+                  the
+                  mission ‘The Mule Doctors’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">4</td>
+                <td>Solo #1</td>
+                <td>In Libertad, use CQC to kill 5 Santa Blanca soldiers in a row without being visually detected and
+                  without
+                  collateral damage.</td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only LMG, deploy to Malca Bravo then complete the mission ‘El
+                  Cardenal’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without taking any damage, deploy to Flor De Oro alpha then complete the
+                  mission
+                  ‘General Baro’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">5</td>
+                <td>Solo #1</td>
+                <td>In Extreme difficulty and without being visually detected, use C4 to destroy 3 jammers in a row.
+                </td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Media Luna Bravo then complete
+                  the
+                  mission ‘El Muro’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty, without taking any damage and without HUD, deploy to Agua Verde Charlie then
+                  complete
+                  the mission ‘The Resort’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">6</td>
+                <td>Solo #1</td>
+                <td>While stationary, kill 3 Unidad snipers from 100m or further.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without dying, deploy to Montuyoc Alpha then complete the mission
+                  ‘Operation
+                  Oracle’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only CQC, deploy to Itacua Bravo then complete the mission “Culta’s
+                  Prisoner’.
+                </td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">7</td>
+                <td>Solo #1</td>
+                <td>Without being visually detected and without collateral damage, use CQC to kill 5 Unidad soldiers in
+                  a row.
+                </td>
+                <td>5</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to La Cruz Bravo then complete the
+                  mission
+                  ‘La Plaga’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Caimanes Bravo then complete
+                  the
+                  mission
+                  ‘The Prototype’.</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <div class="card-header" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+        aria-controls="collapse6">
+        Week 6
+      </div>
+      <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+
+            <tbody>
+              <tr class="fixed-header">
+                <th>Day</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Goal</th>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">1</td>
+                <td>Solo #1</td>
+                <td>Without being visually detected and without collateral damage, use a handgun to kill 7 Santa Blanca
+                  heavies
+                  and Veterans in a row.</td>
+                <td>7</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only handguns, deploy to Barvechos Alpha then complete the mission
+                  ‘Nidia
+                  Flores’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only explosives and CQC, deploy to Agua Verde Alpha then complete
+                  the
+                  mission
+                  ‘The Casino’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">2</td>
+                <td>Solo #1</td>
+                <td>Use the crossbow to kill the Yeti.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only explosives, deploy to Agua Verde Charlie then complete the
+                  mission
+                  'Cooking With Coca'.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only a sniper rifle, deploy to La Cruz Bravo then complete the
+                  mission
+                  'Operation: Watchman'.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">3</td>
+                <td>Solo #1</td>
+                <td>Use a LMG to destroy Santa Blanca sports cars.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only shotguns, deploy to San Mateo Bravo then complete the mission
+                  ‘The
+                  Prison
+                  Village’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without taking any damage, deploy to Ocoro Charlie then complete the
+                  mission
+                  ‘Special Transport.’</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">4</td>
+                <td>Solo #1</td>
+                <td>Use a sniper rifle to kill Unidad heavies from 150m or further.</td>
+                <td>3</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Koani Alpha then complete the
+                  misison
+                  ‘Train Graveyard’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without taking damage, deploy to Montuyoc Bravo then complete the mission
+                  ‘The
+                  Deserter’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">5</td>
+                <td>Solo #1</td>
+                <td>Use explosives to kill the leader of the fake cult of ‘El Tio’.</td>
+                <td>1</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and without being visually detected, deploy to Remanzo Bravo then complete the
+                  mission
+                  ‘Energy Drinks’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only assault rifles, deploy to Koani Bravo then complete the mission
+                  ‘Flight
+                  Plan’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">6</td>
+                <td>Solo #1</td>
+                <td>Using only 4 bullets or less, kill 4 Unidad snipers in a row without collateral damage.</td>
+                <td>4</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only the crossbow, deploy to Malca Bravo then complete the mission
+                  ‘Show
+                  Canceled’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and using only sniper rifles, deploy to Inca Camina Bravo then complete the
+                  mission
+                  ‘Operation Silent Spade: Snafu’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="bg-dark-1 op-0">7</td>
+                <td>Solo #1</td>
+                <td>In Extreme difficulty, kill 6 Unidad soldiers while stationary.</td>
+                <td>6</td>
+
+              </tr>
+              <tr>
+                <td>Solo #2</td>
+                <td>In Extreme difficulty and using only assault rifles, deploy to Mojocoyo Alpha then complete the
+                  mission ‘The
+                  Outpost’.</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Solo #3</td>
+                <td>In Extreme difficulty and without taking any damage deploy to Pucara Charlie then complete the
+                  mission ‘El
+                  Sueño’s Convoy’.</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+
   <h3>Week 1</h3>
   <table class="table table-dark table-striped">
 
     <tbody>
       <tr>
         <th>Day</th>
-        <th>Challenge Type</th>
+        <th>Type</th>
         <th>Description</th>
         <th>Goal</th>
       </tr>
@@ -216,7 +1290,7 @@
     <tbody>
       <tr>
         <th>Day</th>
-        <th>Challenge Type</th>
+        <th>Type</th>
         <th>Description</th>
         <th>Goal</th>
       </tr>
@@ -364,7 +1438,7 @@
     <tbody>
       <tr>
         <th>Day</th>
-        <th>Challenge Type</th>
+        <th>Type</th>
         <th>Description</th>
         <th>Goal</th>
       </tr>
@@ -515,7 +1589,7 @@
     <tbody>
       <tr>
         <th>Day</th>
-        <th>Challenge Type</th>
+        <th>Type</th>
         <th>Description</th>
         <th>Goal</th>
       </tr>
@@ -664,7 +1738,7 @@
     <tbody>
       <tr>
         <th>Day</th>
-        <th>Challenge Type</th>
+        <th>Type</th>
         <th>Description</th>
         <th>Goal</th>
       </tr>
@@ -816,7 +1890,7 @@
     <tbody>
       <tr class="fixed-header">
         <th>Day</th>
-        <th>Challenge Type</th>
+        <th>Type</th>
         <th>Description</th>
         <th>Goal</th>
       </tr>
@@ -958,7 +2032,7 @@
       </tr>
     </tbody>
   </table>
-
+ -->
 
   <script>
     // [...$('[rowspan="3"]')].forEach(e => {
@@ -970,4 +2044,5 @@
     // });
   </script>
 </body>
+
 </html>
