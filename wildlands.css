@@ -83,6 +83,6 @@ table {
     height: calc(100vh - 60px);
   }
   .nav.nav-tabs {
-    bottom: 20px;
+    position: unset;
   }
 }
