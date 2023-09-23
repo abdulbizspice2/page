@@ -66,7 +66,8 @@ tbody tr:first-child {
 }
 
 .tab-content {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 38px);
+  overflow: auto;
 }
 
 .nav-tabs .nav-link:focus,
@@ -89,5 +90,5 @@ tbody tr:first-child {
 }
 
 table {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
