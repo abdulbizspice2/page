@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy Redeem Code</title>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: auto;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #323232;
+        color: #fff;
+      }
+
+      #input {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+        height: 100px;
+        padding: 10px 10px;
+        margin: 0 0 10px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px -5px #00000085;
+        border: 1px solid #00000061;
+        background: #d1d1d1;
+      }
+      #btn {
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        background-color: #3f51b5;
+        border: 1px solid #171717;
+        padding: 0.6rem 1.8rem;
+        font-size: 1rem;
+        line-height: 1.4;
+        border-radius: 0.25rem;
+        transition: all 0.3s ease;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 0 20px;
+      }
+      #text {
+        max-width: 500px;
+      }
+      label {
+        display: block;
+        font-size: 18px;
+        margin: 0 0 10px;
+      }
+      .copy-text {
+        display: block;
+        box-shadow: 0px 0px 10px -5px #00000085;
+        border: 1px solid #00000061;
+        padding: 10px 10px;
+        background: #3f51b5;
+        margin: 0 0 5px;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+      }
+      .copy-text.clicked {
+        background: #0d1a66;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="input">Enter Code</label>
+    <textarea type="text" id="input">
+      LuX Nothing IconPack Promo Codes Giveaway #1
+
+NHANDHUMTT3KGZK7BEFWNNW
+F24H9CDKGEM73DG8MJRBU91
+KNHVK2KJ7E3SWTK7V6RLGPJ
+1F3N4S01TXLQWWLSLMGFJTV
+05KJD01201CN5XKJLP1NNMA
+2D5E9CK525FX8FLQ65GTL0G
+Q6REA6XGQW3UD0QZEWKA7DM
+WW8FLBHWHB927Q6LG20M8XD
+QJ0Q8Z3CXHLWJXTALGHJU82
+TDNQB5QRCDKZY6G7VBQF68B
+    </textarea>
+    <button id="btn" type="button">Format</button>
+
+    <label>Formatted Code</label>
+    <div id="text"></div>
+
+    <script>
+      const input = document.getElementById("input");
+      const btn = document.getElementById("btn");
+      const text = document.getElementById("text");
+
+      btn.addEventListener("click", function () {
+        let rawText = input.value.trim().replace(/ +(?= )/g, "");
+
+        rawText = rawText
+          .replace(/ /g, "")
+          .split("\n")
+          .filter((e) => e.length > 16 && !e.includes(" "));
+        console.log(rawText);
+
+        let el = "";
+        rawText.forEach((e) => {
+          el += `<input type='text' readonly class="copy-text" value="${e}">`;
+        });
+        text.innerHTML = el;
+
+        // class event listner
+        var elements = document.getElementsByClassName("copy-text");
+
+        var myFunction = function () {
+          var t = this.value;
+          console.log(t);
+          copyText(this);
+        };
+
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener("click", myFunction, false);
+        }
+      });
+
+      function copyText(el) {
+        // Select the text field
+        el.select();
+        el.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(el.value);
+        el.classList.add("clicked");
+      }
+    </script>
+  </body>
+</html>
