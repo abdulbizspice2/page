@@ -88,8 +88,7 @@
         rawText = rawText
           .replace(/ /g, "")
           .split("\n")
-          .filter((e) => e.length > 16 && !e.includes(" "));
-        console.log(rawText);
+          .filter((e) => e.length > 2 && !e.includes(" "));
 
         let el = "";
         rawText.forEach((e) => {
