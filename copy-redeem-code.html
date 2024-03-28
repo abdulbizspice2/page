@@ -86,7 +86,7 @@
         let rawText = input.value.trim().replace(/ +(?= )/g, "");
 
         rawText = rawText
-          .replace(/ /g, "")
+          // .replace(/ /g, "")
           .split("\n")
           .filter((e) => e.length > 2 && !e.includes(" "));
 
